@@ -1,11 +1,11 @@
-import clone from "clone";
-import uslug from "uslug";
-import Token from "markdown-it/lib/token";
+import clone from "./clone";
+import uslug from "./uslug";
+import Token from "./token";
 
 const TOC = "@[toc]";
 const TOC_RE = /^@\[toc\]/im;
 
-let markdownItSecondInstance = () => {};
+let markdownItSecondInstance = () => { };
 let headingIds = {};
 let tocHtml = "";
 
@@ -141,7 +141,7 @@ const generateTocMarkdownFromArray = (headings, options) => {
   return treeToMarkdownBulletList(tree.nodes);
 };
 
-export default function(md, options) {
+export default function (md, options) {
   options = {
     toc: true,
     tocClassName: "markdownIt-TOC",
@@ -164,7 +164,7 @@ export default function(md, options) {
   // initialize key ids for each instance
   headingIds = {};
 
-  md.core.ruler.push("init_toc", function(state) {
+  md.core.ruler.push("init_toc", function (state) {
     const tokens = state.tokens;
 
     // reset key ids for each document
@@ -284,12 +284,12 @@ export default function(md, options) {
 
   const originalHeadingOpen =
     md.renderer.rules.heading_open ||
-    function(...args) {
+    function (...args) {
       const [tokens, idx, options, , self] = args;
       return self.renderToken(tokens, idx, options);
     };
 
-  md.renderer.rules.heading_open = function(...args) {
+  md.renderer.rules.heading_open = function (...args) {
     const [tokens, idx, , ,] = args;
 
     const attrs = (tokens[idx].attrs = tokens[idx].attrs || []);
