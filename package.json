@@ -1,5 +1,5 @@
 {
-  "name": "markdown-it-toc-and-anchor",
+  "name": "markdown-it-toc-and-anchor-purify",
   "version": "4.2.0",
   "description": "markdown-it plugin to add toc and anchor links in headings",
   "keywords": [
@@ -11,7 +11,7 @@
   ],
   "author": "Maxime Thirouin",
   "license": "MIT",
-  "repository": "https://github.com/medfreeman/markdown-it-toc-and-anchor.git",
+  "repository": "https://github.com/Gbin03/markdown-it-toc-and-anchor-purify.git",
   "main": "dist/index.js",
   "files": [
     "dist",

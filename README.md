@@ -1,4 +1,4 @@
-# markdown-it-toc-and-anchor
+# markdown-it-toc-and-anchor-purify
 [![circleci](https://badgen.net/circleci/github/medfreeman/markdown-it-toc-and-anchor/master)](https://circleci.com/gh/medfreeman/markdown-it-toc-and-anchor)
 [![AppVeyor Build Status](https://img.shields.io/appveyor/ci/medfreeman/markdown-it-toc-and-anchor.svg?label=windows%20build)](https://ci.appveyor.com/project/medfreeman/markdown-it-toc-and-anchor)
 [![Version](https://img.shields.io/npm/v/markdown-it-toc-and-anchor.svg)](https://www.npmjs.com/package/markdown-it-toc-and-anchor)
@@ -10,7 +10,7 @@
 ## Installation
 
 ```console
-$ yarn add markdown-it-toc-and-anchor
+$ yarn add markdown-it-toc-and-anchor-purify
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ $ yarn add markdown-it-toc-and-anchor
 
 ```js
 import markdownIt from "markdown-it"
-import markdownItTocAndAnchor from "markdown-it-toc-and-anchor"
+import markdownItTocAndAnchor from "markdown-it-toc-and-anchor-purify"
 
 markdownIt({
     html: true,
@@ -36,7 +36,7 @@ markdownIt({
 
 ```js
 var markdownIt = require('markdown-it'),
-    markdownItTocAndAnchor = require('markdown-it-toc-and-anchor').default;
+    markdownItTocAndAnchor = require('markdown-it-toc-and-anchor-purify').default;
 
 markdownIt({
     html: true,
